@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.btn-primary{
+  @apply rounded-md px-4 py-2 bg-pink-700 text-gray-50
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+  @apply bg-pink-800;
+}
+
+.action-card{
+  @apply p-8 rounded-lg bg-pink-700 flex justify-between transition-all items-center;
+}

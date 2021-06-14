@@ -15,8 +15,8 @@ class CreateShopListsTable extends Migration
     {
         Schema::create('shop_lists', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo', 100);
-            $table->text('conteudo');
+            $table->string('title', 100);
+            $table->text('content');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
